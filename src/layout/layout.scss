@@ -1,0 +1,39 @@
+@import "../assets/reset.css";
+@import "../assets/main.module.css";
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 138px;
+    font-family: 'NeoDunggeunmo';
+    font-size: 36px;
+    position: sticky;
+    top:0;
+    z-index: 999999;
+    h1{
+        margin-right: 113px;
+    }
+    ul{
+        display: flex;
+        li{
+            a{
+                
+                padding: 0 77px;
+            }
+           
+        }
+    }
+    div{
+        display: flex;
+        align-items: center;
+        margin-right: 100px;
+    }
+     
+}
+
+.cantact_me{
+    display: block;
+    position: absolute;
+    bottom: 0; right: 0;
+}
