@@ -1,21 +1,56 @@
-body{
-    background-color: #069AD6;
-}
 
-.silde_wrapper{
-    display: flex;
-    justify-content: space-evenly;
+.profile{
     width: 100%;
-    height: 100vh;
-    .silde{
-        width: 327px; height: 479px;
-        background-color: wheat;
-        &.on{
-            width: 374px; height: 548px;
+    text-align: center;
+    p {
+            margin-bottom: 30px;
+        }
+    h2 {
+            text-align: center;
+            padding-top: 0;
+    }
+    .profile_box1{
+        margin-bottom: 55px;
+       
+    }
+    .profile_box2{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 300px 300px;
+        margin-bottom: 280px;
+        .profile_box2_txtbox{
+            text-align: left;
+        }
+        .profile_box2_imgbox{
+            position: relative;
+            
+            img{
+                position: absolute; 
+            }
+            svg{
+                position: absolute;
+            }
+            .github{
+                top: 20px; left: 0;
+            }
+            .Effect1{
+                left: -70px; top:-50px
+            }
+            .Notion{
+                bottom: 0px; right: 30px;
+            }
+            .Effect2{
+                bottom: 50px; right: -50px;
+            }
         }
     }
-    .silde:nth-child(even){
-        
+    footer{
+        width: 100%;
+        background-color: #069AD6;
+        line-height: 200px;
+        font-family: 'NeoDunggeunmo';
+        font-size: 24px;
+        color: white;
+
     }
 }
-

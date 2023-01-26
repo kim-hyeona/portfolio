@@ -1,0 +1,71 @@
+
+
+.skills{
+    width: 100%; height: 100vh;
+    position: relative;
+    button{
+        position: absolute;
+        top:30%;
+        border: none;
+        background-color: white;
+        cursor: pointer;
+    }
+    button:nth-child(even){
+      top:30%; right: 10%;
+    }
+    button:nth-child(odd){
+      top:30%; left: 10%;
+    }
+    h2{
+        margin: 172px 0 0 300px;
+    }
+    span{
+        font-family: 'NeoDunggeunmo';
+        font-size: 20px;
+    }
+    .skliis_cantainer{
+        overflow: hidden;
+        width: 1400px;
+        margin: 0 auto;
+    }
+    .skills_wrapper{
+        display: flex;
+        
+        .skills_silde{
+            display: grid;
+            grid-template-columns: 700px 700px;
+            grid-template-rows: 360px 360px;
+            justify-content: center;
+            justify-items: center;
+            .txtbox{
+                margin-top: 50px;
+            }
+            .skills_var{
+                display: inline-block;
+                ul{
+                margin-left: 20px;
+                width: 500px;
+                height: 10px;
+                background-color: black;
+                overflow: hidden;
+                position: static;
+
+                    li{
+                        width: 500px;
+                        height: 10px;
+                        background-color: #FF800B;
+                        padding: 10px;
+                    }
+               
+                }
+               .run8bit{
+                margin-left: 15px;
+               }
+                .cookie8bit{
+                margin-left: 84.8%;
+             }
+        }
+           
+    }
+}
+}
