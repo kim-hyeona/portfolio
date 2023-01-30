@@ -1,7 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import "./Project.scss"
 
+
 function Project() {
+
     const path = process.env.PUBLIC_URL;
 
     const [presentSlide, setpresentSlide] = useState(0);
@@ -30,7 +32,7 @@ function Project() {
     
     return (
         <article className='project'>
-            <h2>PROJECT</h2>
+            <h2>PROJECT{ <img src={path+'/images/froject_effect.png'} alt=".+.*" />}</h2>
             <button onClick={nextSlide} ><img src={path+'/images/arrow1-2.png'} alt="<" /></button>
             <button onClick={prevSlide}><img src={path+'/images/arrow1-1.png'} alt=">" /></button>
                 <div className='silde_wrapper' ref={slideRef} >

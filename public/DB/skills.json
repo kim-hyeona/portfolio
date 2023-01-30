@@ -1,0 +1,64 @@
+{
+    "skills":[
+        {
+        "id":1,
+        "title":"HTML & CSS",
+        "class":"html",
+        "contents1":"미디어 쿼리를 이용한 반응형 웹 구현",
+        "contents2":"애니메이션과 트랜지션을 이용한 간단한 움직임 구현",
+        "contents3":"웹 접근성을 고려하고 콘텐츠 내용에 적합한 태그를 사용한 마크업 작업",
+        "contents4":"웹 사이트 디자인"
+    },
+    {
+        "id":2,
+        "title":"REACT",
+        "class":"react",
+        "contents1":"함수 컴포넌트와 HOOK을 이용하여 UI 제작",
+        "contents2":"스크롤/클릭 이벤트와 애니메이션 구현,OPEN API 활용"
+    },
+    {
+        "id":3,
+        "title":"JAVASCRIPT",
+        "class":"js",
+        "contents1":"다채로운 스크롤 / 클릭 이벤트와 애니메이션 구현",
+        "contents2":"사용자가 이용할 대부분의 기능 구현",
+        "contents3":"OPEN API 사용"
+    },
+    {
+        "id":4,
+        "title":"GIT & GITHUB",
+        "class":"figma",
+        "contents1":"프로젝트 버전 관리",
+        "contents2":"GITHUB를 이용한 버전 관리와 협업"
+    }
+   
+],
+
+    "skills2":[
+         {
+        "id":5,
+        "title":"FIGMA&PHOTOSHOP",
+        "class":"git",
+        "contents1":"간단한 이미지 편집과 UI / UX 디자인",
+        "contents2":"프로토타입 제작"
+    },
+    {
+        "id":6,
+        "title":"LODING...",
+        "class":"loding",
+        "contents1":"공부중입니다!!"
+    },
+    {
+        "id":7,
+        "title":"LODING...",
+        "class":"loding",
+        "contents1":"공부중입니다!!"
+    },
+    {
+        "id":8,
+        "title":"LODING...",
+        "class":"loding",
+        "contents1":"공부중입니다!!"
+    }
+    ]
+}

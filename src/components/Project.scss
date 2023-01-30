@@ -6,7 +6,7 @@
         overflow: hidden;
     button{
         position: absolute;
-        top:500px;
+        top:450px;
         border: none;
         cursor: pointer;
         background-color: transparent;
@@ -20,7 +20,12 @@
         }
     h2{
     text-align: center;
-    padding-top: 200px;
+    padding: 200px 0 19px 0;
+    position: relative;
+    img{
+        position: absolute;
+        bottom: 5px;
+    }
     }
     .silde_wrapper {
         // border: 1px solid saddlebrown ;

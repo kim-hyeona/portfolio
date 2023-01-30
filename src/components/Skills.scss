@@ -18,6 +18,7 @@
     }
     h2{
         margin: 172px 0 0 300px;
+        display: flex;
     }
     span{
         font-family: 'NeoDunggeunmo';
@@ -39,6 +40,11 @@
             justify-items: center;
             .txtbox{
                 margin-top: 50px;
+                p{
+                    width: 550px;
+                    margin: auto;
+                   
+                }
             }
             .skills_var{
                 display: inline-block;
@@ -51,10 +57,11 @@
                 position: static;
 
                     li{
-                        width: 500px;
-                        height: 10px;
+                        width: 0%;
+                        height: 100%;
                         background-color: #FF800B;
                         padding: 10px;
+                        transition: 3s;
                     }
                
                 }
