@@ -1,13 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./layout.scss"
 
 function CantactMe(props) {
+
+    const [isOpen, setMenu] = useState(false);
+    const toggleMenu = (e) => {
+        setMenu(isOpen => !isOpen);
+    }
+
+    //  
     const path = process.env.PUBLIC_URL;
     return (
-        <a className='cantact_me'>
-            <img src={path+'/images/contactme.png'} alt="cantact_me"/>
-        </a>
-    );
+        <div>
+            <div className={isOpen ? "show-menu" : "hide-menu"}>
+                
+            </div>
+            <img onClick={()=>toggleMenu()} className='cantact_me' src={path+'/images/contactme.png'} alt="cantact_me"/>
+        </div>
+        
+        );
 }
 
 export default CantactMe;

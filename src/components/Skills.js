@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Skill from './Skill';
+import Skill2 from './Skill2';
 import "./Skills.scss"
 import axios from "axios";
 import Star from '../layout/Star';
@@ -18,6 +19,7 @@ function Skills() {
       };
       getData();
     }, []);
+
 
 
 // path
@@ -58,8 +60,7 @@ const nextSlide = () => { //<
                     <Skill skills={skills}/>
                   </div>
                   <div className="skills_silde">
-                    <Skill skills={skills2}/>
-  
+                    <Skill2 skills={skills2}/>
                   </div>
                 </div>
             </div>

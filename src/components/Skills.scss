@@ -48,6 +48,7 @@
             }
             .skills_var{
                 display: inline-block;
+               
                 ul{
                 margin-left: 20px;
                 width: 500px;
@@ -55,21 +56,34 @@
                 background-color: black;
                 overflow: hidden;
                 position: static;
-
-                    li{
+                li{
                         width: 0%;
                         height: 100%;
                         background-color: #FF800B;
                         padding: 10px;
                         transition: 3s;
-                    }
-               
+                }
+                .loding{
+                    width: 100%;
+                    background-color: #b7b7b7;
+                }
                 }
                .run8bit{
-                margin-left: 15px;
-               }
+                display: inline-block;
+                width: 35px; height: 35px;
+                background-image: url(../../public/images/run2.png);
+                animation: run 0.2s infinite  ;
+                }
+                @keyframes run{
+                    0%{
+                        background-image: url(../../public/images/run2.png)
+                    }
+                    50%{
+                        background-image: url(../../public/images/run1.png)
+                    }
+                }
                 .cookie8bit{
-                margin-left: 84.8%;
+                margin-left: 86%;
              }
         }
            
