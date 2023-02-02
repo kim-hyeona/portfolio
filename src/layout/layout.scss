@@ -1,6 +1,7 @@
 @import "../assets/style/reset.css";
 @import "../assets/style/main.module.css";
 
+
 nav{
     .scrollBoder{
         border-bottom: 1px solid black ;
@@ -21,18 +22,31 @@ nav{
             min-width: 190px;
             position: relative;
         }
+            &:hover::after {
+                content: "";
+                width: 195px;
+                height: 5px;
+                background-color: #FF800B;
+                position: absolute;
+                bottom: 35px;
+            }
     }
     ul{
         display: flex;
         li{
             position: relative;
-                padding: 0 77px;
+            padding: 0 77px;
+            a{
+                &:hover{
+                    color:#FF800B;
+                }
+            }
         }
     }
    .nav_github{
         display: flex;
         align-items: center;
-        margin-left:30%;
+        margin-left:20%;
         position: relative;
         img{
             margin-left: 5px;
@@ -67,18 +81,15 @@ nav{
     display: block;
     position: fixed;
     bottom: 0; right: 0;
+    animation: cantactMove 2s infinite ;
 }
 
-  .show-menu {
-        width: 376px;
-        height: 500px;
-        bottom: 50%; left: 50%;
-        transform: translate(-25%,25%);
-        position: fixed;
-        transition: 1s;
-        background-color: pink;
-  }
+@keyframes cantactMove {
+    0%{
+        transform: translate(0px);
+    }
+    50%{
+        transform: translateY(-10px)
+    }
+}
 
-  .hide-menu {
-        display: none;
-  }

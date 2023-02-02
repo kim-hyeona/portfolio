@@ -5,8 +5,8 @@ function Skill({ skills }) {
         <>
         { skills.map((item) => 
             <div key={item.id}>
-            <span>{item.title}</span>
                 <SkillGo/>
+                <span>{item.title}</span>
                 <div className="txtbox">
                     <ul>
                         <li>{item.contents1}</li>
@@ -15,10 +15,9 @@ function Skill({ skills }) {
                         <li>{item.contents4}</li>
                     </ul>
                 </div>
+                
         </div>
         ) }
-
-
         </>
     );
 }

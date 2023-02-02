@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { motion } from "framer-motion"
 import Skill from './Skill';
 import Skill2 from './Skill2';
 import "./Skills.scss"
@@ -21,10 +22,10 @@ function Skills() {
     }, []);
 
 
-
 // path
 const path = process.env.PUBLIC_URL;
 
+// 슬라이드
 const [presentSlide, setpresentSlide] = useState(0);
 const slideRef = useRef(null);
 const TOTAL_SLIDES = 1
@@ -34,7 +35,6 @@ const nextSlide = () => { //<
 }
   };
 
-// 슬라이드
   const prevSlide = () => { //>
     if (presentSlide === 0) {
       setpresentSlide(presentSlide + 1);
@@ -49,6 +49,9 @@ const nextSlide = () => { //<
 
 
     return (
+      <motion.div  initial={{opacity: 0}}
+        animate={{opacity: 1}}
+        exit={{opacity: 0}}>
         <article className='skills'>
             <h2><Star/>SKILLS</h2> 
             <button onClick={prevSlide}><img src={path+ '/images/arrow2.png'} alt=">" /></button>
@@ -65,6 +68,7 @@ const nextSlide = () => { //<
                 </div>
             </div>
         </article>
+      </motion.div>
     );
 }
 

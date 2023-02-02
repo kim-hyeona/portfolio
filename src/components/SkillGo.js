@@ -1,13 +1,15 @@
 import React, { useEffect, useRef } from 'react';
+import Skills from './Skills';
 
 function SkillGo(props) {
     const path = process.env.PUBLIC_URL;
 
-  const targetRef = useRef(null);  
+  const targetRef = useRef(0);
+  
   const handleScroll = () => {
-    console.log("scrolling");
+    console.log(window.scrollY);
     
-    if (window.scrollY > 0) {
+    if (window.scrollY >= 0) {
       targetRef.current.style.width = "65%";      
     }
   };
@@ -15,17 +17,37 @@ function SkillGo(props) {
   useEffect(() => {    
     const timer = setInterval(() => {
       window.addEventListener("scroll", handleScroll);
-    }, 2000);
+    }, 500);
     return () => {
       clearInterval(timer);
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
+
+  const runRef = useRef(null);  
+  const handleScrollRun = () => {
+    
+    if (window.scrollY > 0) {
+      runRef.current.style.marginLeft = "65%";      
+    }
+  };
+  useEffect(() => {    
+    const timer = setInterval(() => {
+      window.addEventListener("scroll", handleScrollRun);
+    }, 500);
+    return () => {
+      clearInterval(timer);
+      window.removeEventListener("scroll", handleScrollRun);
+    };
+  }, []);
+
     return (
         <div className="skills_var">
+            <div className="run8bit" ref={runRef}></div>
+            <img className='cookie8bit' src={path+"/images/cookie_run.png"} alt="cookieimg" />
             <ul>
-               <li ref={targetRef}></li>
+               <li className='var' ref={targetRef}></li>
             </ul>
         </div>
     );

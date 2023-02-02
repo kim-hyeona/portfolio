@@ -10,41 +10,174 @@
         border: none;
         cursor: pointer;
         background-color: transparent;
-        z-index: 9999;
         }
     button:nth-child(even){
-        right: 600px;
+        right: 31.250vw;
         }
     button:nth-child(odd){
-        left: 600px;
+        left: 31.250vw;
         }
     h2{
-    text-align: center;
+    width: 300px;
+    margin: 0 auto;
     padding: 200px 0 19px 0;
     position: relative;
+    line-height: 114px;
+    span{
+        width: 114px;
+        background-image: url(../../public/images/froject_effect.png);
+        position: absolute;
+        bottom: 25px;
+        animation: effectMove 0.3s infinite;
+    }
+    @keyframes effectMove {
+        0%{
+            background-image: url(../../public/images/froject_effect.png);
+        }
+        0.1%{
+            background-image: url(../../public/images/froject_effect2.png);
+        }
+    }
     img{
         position: absolute;
-        bottom: 5px;
+        bottom: 25px;
     }
     }
-    .silde_wrapper {
-        // border: 1px solid saddlebrown ;
-        width: 700px;
-        margin: auto;
-        display: flex;
-            .silde { //움직여야 하는 애
-                height: 479px;
-                margin: 0 190px;
-                background-color: wheat;
-                border-radius: 20px ;
-                    p{
-                        width: 327px;
-                    }
+     
+}
 
-                    &.on {
-                        width: 374px;
-                        height: 548px;
-                        }
-                    }
+ .silde_wrapper{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    height: 500px; width: 706px;
+    .silde{
+        background-color: teal;
+        height: 479px;
+        margin: 190px;
+        text-align: center;
+        position: relative;
+        h5 {
+                font-size: 24px;
+                width: 327px;
+                line-height: 27;
+            }
+        .sildeBtn{
+            width: 125px;
+            height: 57px;
+            text-align: center;
+            line-height: 51px;
+            position: absolute;
+            left: 32%; top: 374px;
+            background: url(../../public/images/project_btn.png) no-repeat; 
+        }
+    
+    }
+}
+
+.silde_wrapper.active {
+    z-index: 999999999;
+    .silde.active {
+        background-color: teal;
+        margin: 0 auto;
+        text-align: center;
+        position: fixed;
+        left: -50%;
+
+        h5 {
+            font-size: 24px;
+            width: 374px;
+            line-height: 27;
+        }
+
+        .sildeBtn {
+            width: 158px;
+            height: 65px;
+            text-align: center;
+            line-height: 65px;
+            position: absolute;
+            left: 29%;
+            top: 374px;
+            background: url(../../public/images/project_btn_active.png) no-repeat;
+        }
+
+        .sildeIn.active {
+            display: flex;
+            flex-wrap: wrap;
+            width: 914px;
+            height: 479px;
+            background-color: white;
+            position: absolute;
+            left: 374px;
+            top: 0;
+
+            .btns {
+                padding: 15px;
+                display: flex;
+                justify-content: space-between;
+                width: 910px;
+
+                .gitBtn {
+                    width: 113px;
+                    height: 35px;
+                    background-image: url(../../public/images/git_btn.png);
+                }
+
+                .inCloseBtn {
+                    width: 34px;
+                    height: 32px;
+                    background-image: url(../../public/images/close.png);
                 }
             }
+
+            .txtBox {
+                width: 910px;
+                padding: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                h4 {
+                    font-size: 32px;
+                    font-family: 'NeoDunggeunmo';
+                }
+
+                .txt {
+                    text-align: left;
+                    width: 450px;
+
+                    h3 {
+                        font-size: 32px;
+                    }
+
+                    .sildebox {
+                        background-color: #069AD6;
+                        width: 200px;
+                        height: 20px;
+                        overflow: hidden;
+                        display: flex;
+
+                        div {
+                            animation: benner 3s linear infinite;
+                        }
+                    }
+
+                    @keyframes benner {
+                        0% {
+                            transform: translate3d(30, 0, 0);
+                        }
+
+                        100% {
+                            transform: translate3d(-220px, 0px, 0px);
+                        }
+                    }
+
+
+                }
+            }
+
+
+        }
+
+    }
+}

@@ -1,9 +1,24 @@
 @import "../fonts/fonts.css";
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: url(../../../public/images/milk.png) 2 2, auto;
+}
+
 body * {
   box-sizing: border-box;
   margin: 0;
 }
+
+body::-webkit-scrollbar {
+  width: 15px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #FF800B;
+}
+
 
 a {
   color: inherit;

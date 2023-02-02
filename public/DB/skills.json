@@ -49,14 +49,6 @@
         "class_run":"run8bit",
         "class_cookie":"cookie8bit",
         "contents1":"공부중입니다!!"
-    },
-    {
-        "id":7,
-        "title":"LODING...",
-        "class":"loding",
-        "class_run":"run8bit",
-        "class_cookie":"cookie8bit",
-        "contents1":"공부중입니다!!"
     }
     ]
 
