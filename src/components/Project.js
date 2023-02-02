@@ -39,7 +39,7 @@ function Project() {
     }
   };
 
-  
+
 
   useEffect(() => {
     slideRef.current.style.transition = "all 0.7s ease-in-out";
@@ -55,7 +55,7 @@ function Project() {
             <h2>PROJECT <span>.</span> </h2>
             <button className='project_btn' onClick={nextSlide}  ><img src={path+'/images/arrow1-2.png'} alt="<" /></button>
             <button  className='project_btn' onClick={prevSlide} ><img src={path+'/images/arrow1-1.png'} alt=">" /></button>
-                <div className='silde_wrapper active'  ref={slideRef} >
+                <div className='silde_wrapper'  ref={slideRef} >
                     <ProjectSilde project={project}/>
                     <ProjectSilde project={project}/>
                     <ProjectSilde project={project}/>

@@ -84,9 +84,9 @@
     }
 }
 
-.silde_wrapper.active {
+.silde_wrapper_active {
     z-index: 999999999;
-    .silde.active {
+    .silde_active {
         background-color: teal;
         margin: 0 auto;
         text-align: center;
@@ -111,7 +111,7 @@
             background: url(../../public/images/project_btn_active.png) no-repeat;
         }
 
-        .sildeIn.active {
+        .sildeIn_active {
             display: flex;
             flex-wrap: wrap;
             width: 914px;
