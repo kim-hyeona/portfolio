@@ -57,6 +57,11 @@ function Project() {
             <button  className='project_btn' onClick={prevSlide} ><img src={path+'/images/arrow1-1.png'} alt=">" /></button>
                 <div className='silde_wrapper active'  ref={slideRef} >
                     <ProjectSilde project={project}/>
+                    <ProjectSilde project={project}/>
+                    <ProjectSilde project={project}/>
+                    <ProjectSilde project={project}/>
+                    <ProjectSilde project={project}/>
+                    <ProjectSilde project={project}/>
                 </div>
         </article>
       </motion.div>

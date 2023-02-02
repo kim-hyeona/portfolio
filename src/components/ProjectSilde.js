@@ -6,9 +6,7 @@ function ProjectSilde({ project }) {
 
     return (
         <>
-        {project.map((item) => 
-
-        <div className='silde active'>
+        {project.map((item) => <div className='silde active'>
         <h5>{item.title}</h5>
             <div className="sildeBtn">
             {item.raedmore}
@@ -19,7 +17,7 @@ function ProjectSilde({ project }) {
 
                 <div className="sildeIn active">
                 <div className="btns">
-                    <div className="gitBtn"></div>
+                    <div className="gitBtn"><a href=""></a></div>
                     <div className="inCloseBtn"></div>
                 </div>
                     

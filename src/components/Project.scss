@@ -3,13 +3,14 @@
         height: 100vh;
         background-color: #069AD6;
         position: relative;
-        overflow: hidden;
+        // overflow: hidden;
     button{
         position: absolute;
         top:450px;
         border: none;
         cursor: pointer;
         background-color: transparent;
+        
         }
     button:nth-child(even){
         right: 31.250vw;
@@ -17,6 +18,12 @@
     button:nth-child(odd){
         left: 31.250vw;
         }
+    .project_btn{
+        z-index: 99;
+    }
+    .button_actvie{
+        z-index: -99;   
+    }
     h2{
     width: 300px;
     margin: 0 auto;
@@ -51,6 +58,7 @@
     display: flex;
     align-items: center;
     height: 500px; width: 706px;
+    background-color: pink;
     .silde{
         background-color: teal;
         height: 479px;
@@ -131,7 +139,7 @@
                     height: 32px;
                     background-image: url(../../public/images/close.png);
                 }
-            }
+            } 
 
             .txtBox {
                 width: 910px;
@@ -143,6 +151,7 @@
                 h4 {
                     font-size: 32px;
                     font-family: 'NeoDunggeunmo';
+                    margin-bottom: 150px;
                 }
 
                 .txt {
@@ -151,10 +160,12 @@
 
                     h3 {
                         font-size: 32px;
+                        font-family: 'NeoDunggeunmo';
+                        
+                        
                     }
 
                     .sildebox {
-                        background-color: #069AD6;
                         width: 200px;
                         height: 20px;
                         overflow: hidden;
@@ -163,6 +174,18 @@
                         div {
                             animation: benner 3s linear infinite;
                         }
+                    }
+
+                    p{
+                        margin-bottom: 80px;
+                        line-height: 2;
+                    }
+
+                    a{
+                        position: absolute;
+                        bottom: 15px; right: 15px;
+                        font-weight: 800;
+                        font-size: 24px;
                     }
 
                     @keyframes benner {
@@ -175,12 +198,13 @@
                         }
                     }
 
-
                 }
             }
-
+            
 
         }
+        
 
     }
+
 }
