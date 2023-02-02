@@ -57,6 +57,7 @@
         margin: 190px;
         text-align: center;
         position: relative;
+        border-radius: 2%;
         h5 {
                 font-size: 24px;
                 width: 327px;
@@ -106,9 +107,10 @@
             flex-wrap: wrap;
             width: 914px;
             height: 479px;
+            border-radius: 20px;
             background-color: white;
             position: absolute;
-            left: 374px;
+            left: 365px;
             top: 0;
 
             .btns {

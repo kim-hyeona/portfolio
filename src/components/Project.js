@@ -1,10 +1,22 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { motion } from "framer-motion"
 import "./Project.scss"
+import axios from "axios";
 import ProjectSilde from './ProjectSilde';
 
 
 function Project() {
+
+
+    const [project,setproject] = useState([]);
+
+    useEffect(() => {
+      const getData = async () => {
+      const projectDataList = await axios.get("/DB/ProjectSilde.json");
+      setproject(projectDataList.data.project);
+      };
+      getData();
+    }, []);
 
     const path = process.env.PUBLIC_URL;
  
@@ -44,12 +56,7 @@ function Project() {
             <button className='project_btn' onClick={nextSlide}  ><img src={path+'/images/arrow1-2.png'} alt="<" /></button>
             <button  className='project_btn' onClick={prevSlide} ><img src={path+'/images/arrow1-1.png'} alt=">" /></button>
                 <div className='silde_wrapper active'  ref={slideRef} >
-                    <ProjectSilde/>
-                    <ProjectSilde/>
-                    <ProjectSilde/>
-                    <ProjectSilde/>
-                    <ProjectSilde/>
-                    <ProjectSilde/>
+                    <ProjectSilde project={project}/>
                 </div>
         </article>
       </motion.div>

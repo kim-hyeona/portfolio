@@ -6,9 +6,10 @@ import "./Skills.scss"
 import axios from "axios";
 import Star from '../layout/Star';
 
-// json
 function Skills() {
 
+  
+// json
     const [skills,setskills] = useState([]);
     const [skills2,setskills2] = useState([]);
 
