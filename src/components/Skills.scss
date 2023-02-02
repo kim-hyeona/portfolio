@@ -8,43 +8,44 @@
         border: none;
         background-color: white;
         cursor: pointer;
-        width: 50px;
+        width: 2.604vw;
     }
     button:nth-child(even){
-      top:25vw; right: 10.417vw;
+      top:25vw; right: 10vw;
     }
     button:nth-child(odd){
-      top:25vw; left: 10.417vw;
+      top:25vw; left: 10vw;
     }
     h2{
-        margin: 0 300px;
+        margin: 5vw 15.625vw;
         display: flex;
         position: relative;
-        top:100px
+        top:5.208vw
     }
     span{
         font-family: 'NeoDunggeunmo';
-        font-size: 20px;
+        font-size: 1.042vw;
     }
     .skliis_cantainer{
         overflow: hidden;
         width: 72.917vw;
-        margin: 100px auto;
+        margin: 5.208vw auto;
     }
     .skills_wrapper{
         display: flex;
         
             .skills_silde{
                 display: grid;
-                grid-template-columns: 37.2vw 37.2vw;
-                grid-template-rows: 360px 360px;
+                grid-template-columns: 37vw 37vw;
+                grid-template-rows: 18.750vw 18.750vw;
                 justify-content: center;
                 justify-items: center;
             .txtbox{
-                margin-top: 50px;
+                margin-top: 2.604vw;
                 li{
                     list-style: disc;
-                    padding-bottom: 15px;
+                    padding-bottom: 0.781vw;
+                    font-size: 0.833vw;
                 }
             }
             .skills_var{
@@ -52,9 +53,9 @@
                 position: relative;
                
                 ul{
-                    margin-right: 20px;
+                    margin-right: 1.042vw;
                     width: 26.042vw;
-                    height: 10px;
+                    height: 0.521vw;
                     background-color: black;
                     overflow: hidden;
                     position: static;
@@ -62,8 +63,9 @@
                     width: 0%;
                     height: 100%;
                     background-color: #FF800B;
-                    padding: 10px;
+                    padding: 0.521vw;
                     transition: 3s;
+                    
                 }
                 .loding{
                     width: 100%;
@@ -89,6 +91,7 @@
                 .cookie8bit{
                 position:absolute;
                 left: 24.479vw;
+                width: 1.667vw; height: 1.667vw;
              }
         }
            

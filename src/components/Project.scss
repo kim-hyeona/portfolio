@@ -1,16 +1,19 @@
 .project{
         width: 100%;
-        height: 100vh;
+        height: 100%;
         background-color: #069AD6;
         position: relative;
-        // overflow: hidden;
+        overflow: hidden;
     button{
         position: absolute;
-        top:450px;
+        top:10.438vw;
         border: none;
         cursor: pointer;
         background-color: transparent;
-        
+        z-index: 999;
+        img{
+            width: 3.073vw;height: 5.625vw;
+        }
         }
     button:nth-child(even){
         right: 31.250vw;
@@ -18,23 +21,17 @@
     button:nth-child(odd){
         left: 31.250vw;
         }
-    .project_btn{
-        z-index: 99;
-    }
-    .button_actvie{
-        z-index: -99;   
-    }
     h2{
-    width: 300px;
-    margin: 0 auto;
-    padding: 200px 0 19px 0;
+    width: 15.625vw;
+    margin: 0 auto 2vw;
+    padding: 10.417vw 0 0.990vw 0;
     position: relative;
-    line-height: 114px;
+    line-height: 5.938vw;
     span{
-        width: 114px;
+        width: 6vw;
         background-image: url(../../public/images/froject_effect.png);
         position: absolute;
-        bottom: 25px;
+        bottom: 1.302vw;
         animation: effectMove 0.3s infinite;
     }
     @keyframes effectMove {
@@ -42,150 +39,159 @@
             background-image: url(../../public/images/froject_effect.png);
         }
         0.1%{
-            background-image: url(../../public/images/froject_effect2.png);
+            background-image: url(../../public/images/froject_effect2.png) ;
         }
     }
     img{
         position: absolute;
-        bottom: 25px;
+        bottom: 1.302vw;
     }
     }
      
 }
 
  .silde_wrapper{
-    margin: 0 auto;
+    margin: 0 auto 1.563vw;
     display: flex;
     align-items: center;
-    height: 500px; width: 706px;
-    background-color: pink;
+    height: 26.042vw; width: 40.771vw;
+    position: relative;
     .silde{
         background-color: teal;
-        height: 479px;
-        margin: 190px;
+        height: 24.948vw;
+        margin: 11.896vw;
         text-align: center;
         position: relative;
-        border-radius: 20px;
+        border-radius: 1.042vw;
         h5 {
-                font-size: 24px;
-                width: 327px;
+                font-size: 1.250vw;
+                width: 17.031vw;
                 line-height: 27;
             }
         .sildeBtn{
-            width: 125px;
-            height: 57px;
+            width: 6.510vw;
+            height: 2.969vw;
             text-align: center;
-            line-height: 51px;
+            line-height:2.656vw;
             position: absolute;
-            left: 32%; top: 374px;
+            left: 32%; top: 19.479vw;
             background: url(../../public/images/project_btn.png) no-repeat; 
+            background-size: contain;
         }
     
     }
 }
 
-.silde_wrapper_active {
-    z-index: 999999999;
-    .silde_active {
+ 
+    .silde_active { //active
         background-color: teal;
         margin: 0 auto;
         text-align: center;
-        border-radius: 20px;
-        position: fixed;
-        left: -50%;
+        border-radius: 1.042vw;
+        position: relative;
+        left: -59%;
+        height: 26.104vw;
 
         h5 {
-            font-size: 24px;
-            width: 374px;
+            font-size: 1.250vw;
+            width: 20.479vw;
             line-height: 27;
         }
 
-        .sildeBtn {
-            width: 158px;
-            height: 65px;
-            text-align: center;
-            line-height: 65px;
+        .sildeBtn_active { //active
+            width: 8.229vw;
+            height: 3.385vw;
+            line-height: 3.385vw;
             position: absolute;
             left: 29%;
-            top: 374px;
+            top: 19.479vw;
             background: url(../../public/images/project_btn_active.png) no-repeat;
+            background-size: contain;
+            // font size vw로 설정하기
         }
 
-        .sildeIn_active {
+        .sildeIn_active { //active
             display: flex;
             flex-wrap: wrap;
-            width: 914px;
-            height: 479px;
-            border-radius:  0 20px 20px 0;
+            width: 70.604vw;
+            height: 26.104vw;
+            border-radius:  0 1.042vw 1.042vw 0;
             background-color: white;
             position: absolute;
-            left: 360px;
+            left: 16vw;
             top: 0;
+            z-index: 9999;
+            transition: 0.5s;
+            transform: translateX(60px);
 
             .btns {
-                padding: 15px;
+                padding: 0.781vw;
                 display: flex;
                 justify-content: space-between;
-                width: 910px;
+                width: 70vw;
 
                 .gitBtn {
-                    width: 113px;
-                    height: 35px;
-                    background-image: url(../../public/images/git_btn.png);
+                    width: 5.885vw;
+                    height: 1.823vw;
+                    background: url(../../public/images/git_btn.png) no-repeat ;
+                    background-size: contain;
                 }
 
                 .inCloseBtn {
-                    width: 34px;
-                    height: 32px;
+                    width: 1.771vw;
+                    height: 1.667vw;
                     background-image: url(../../public/images/close.png);
+                    background-size: contain;
                 }
             } 
 
             .txtBox {
-                width: 910px;
-                padding: 15px;
+                width: 70vw;
+                padding: 0.781vw;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
 
                 h4 {
-                    font-size: 32px;
+                    font-size: 1.667vw;
                     font-family: 'NeoDunggeunmo';
-                    margin-bottom: 150px;
+                    margin-bottom: 7.813vw;
                 }
 
                 .txt {
                     text-align: left;
-                    width: 450px;
+                    width: 23.438vw;
 
                     h3 {
-                        font-size: 32px;
+                        font-size: 1.667vw;
                         font-family: 'NeoDunggeunmo';
-                        
+                        margin-bottom: 1.5vw;
                         
                     }
 
                     .sildebox {
-                        width: 200px;
-                        height: 20px;
+                        width: 10.417vw;
+                        height: 1.042vw;
                         overflow: hidden;
                         display: flex;
 
                         div {
                             animation: benner 3s linear infinite;
+                            font-size: 0.833vw;
                         }
                     }
 
                     p{
-                        margin-bottom: 80px;
+                        margin-bottom: 4.167vw;
                         line-height: 2;
+                        font-size: 0.833vw;
                     }
 
                     a{
                         position: absolute;
-                        bottom: 15px; right: 15px;
+                        bottom: 0.781vw; right: 0.781vw;
                         font-weight: 800;
-                        font-size: 24px;
+                        font-size: 1.250vw;
                     }
 
                     @keyframes benner {
@@ -194,7 +200,7 @@
                         }
 
                         100% {
-                            transform: translate3d(-220px, 0px, 0px);
+                            transform: translate3d(-11.458vw, 0px, 0px);
                         }
                     }
 
@@ -206,5 +212,3 @@
         
 
     }
-
-}

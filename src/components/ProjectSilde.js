@@ -1,66 +1,21 @@
-/* import "./Project.scss"
-import React from 'react';
-import { Link } from "react-router-dom";
-
-function ProjectSilde({ project }) {
-
-    return (
-        <>
-        {project.map((item) => <div className='silde'>
-        <h5>{item.title}</h5>
-            <div className="sildeBtn">
-            {item.raedmore}
-            </div>
-
-            <div className="closeBtn">
-            </div>
-
-                <div className="sildeIn">
-                <div className="btns">
-                    <div className="gitBtn"><a href=""></a></div>
-                    <div className="inCloseBtn"></div>
-                </div>
-                    
-                <div className="txtBox">
-                <h4>{item.stack}</h4>
-                        <div className="txt">
-                            <div className="sildebox">
-                            <div>{item.move}</div>
-                            </div>
-                        <h3>{item.title2}</h3>
-                        <p>{item.p}</p>
-                            <Link>{item.link}</Link>
-                        </div>
-                </div>
-                </div>
-        </div>
-        ) }
-        
-    </>
-    );
-}
-
-export default ProjectSilde;
- */
-
 import "./Project.scss"
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 
 function ProjectSilde({ project }) {
+
+
     const [isOpen, setMenu] = useState(false);
      
     const toggleMenu = () => {
-        setMenu(isOpen => !isOpen); // on,off 개념 boolean
+        setMenu(isOpen => !isOpen); 
     }
-
-
 
     return (
         <>
-        {project.map((item) => <div  className={isOpen ? "silde_active" : "silde"}>
+        {project.map((item) => <div className={isOpen ? "silde_active" : "silde"}>
         <h5>{item.title}</h5>
-            <div onClick={()=>toggleMenu()} className="sildeBtn">
+            <div onClick={()=>toggleMenu()} className={isOpen ? "sildeBtn_active" : "sildeBtn"}>
             {item.raedmore}
             </div>
 

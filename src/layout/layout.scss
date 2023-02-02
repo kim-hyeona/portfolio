@@ -46,7 +46,7 @@ nav{
    .nav_github{
         display: flex;
         align-items: center;
-        margin-left:20%;
+        margin-left:52px; //학원가서 vw로 바꾸기
         position: relative;
         img{
             margin-left: 5px;
@@ -82,6 +82,11 @@ nav{
     position: fixed;
     bottom: 0; right: 0;
     animation: cantactMove 2s infinite ;
+
+    img{
+        width: 9.635vw;
+        height: 7.969vw;
+    }
 }
 
 @keyframes cantactMove {

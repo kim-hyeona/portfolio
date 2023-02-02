@@ -7,6 +7,7 @@ import Profile from "./components/Profile";
 import Nav from "./layout/Nav";
 import { AnimatePresence } from "framer-motion";
 function App() {
+
   return (
       <>
       <Nav/>
@@ -14,7 +15,7 @@ function App() {
       <AnimatePresence>
       <Routes>
         <Route path="/" element={<Main/>}></Route>
-        <Route path="/project" element={<Project />} />
+        <Route path="/project" element={<Project/>} />
         <Route path="/skills" element={<Skills/>} />
         <Route path="/profile" element={<Profile/>} />
       </Routes>

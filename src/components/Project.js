@@ -7,7 +7,6 @@ import ProjectSilde from './ProjectSilde';
 
 function Project() {
 
-
     const [project,setproject] = useState([]);
 
     useEffect(() => {
