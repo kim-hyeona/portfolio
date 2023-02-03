@@ -15,7 +15,7 @@ function Skills() {
 
     useEffect(() => {
       const getData = async () => {
-      const skillDataList = await axios.get("/DB/skills.json");
+      const skillDataList = await axios.get("https://kim-hyeona.github.io/portfolio/DB/skills.json");
       setskills(skillDataList.data.skills);
       setskills2(skillDataList.data.skills2);
       };

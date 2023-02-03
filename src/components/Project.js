@@ -11,7 +11,7 @@ function Project() {
 
     useEffect(() => {
       const getData = async () => {
-      const projectDataList = await axios.get("/DB/ProjectSilde.json");
+      const projectDataList = await axios.get("https://kim-hyeona.github.io/portfolio/DB/ProjectSilde.json");
       setproject(projectDataList.data.project);
       };
       getData();
