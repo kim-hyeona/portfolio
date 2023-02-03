@@ -4,13 +4,13 @@ import Skills from "../components/Skills"
 
 import "./layout.scss"
 
-function Main(props) {
+function Main({children}) {
     return (
-        <div>
-            <Project/>
-            <Skills/>
+        <>
+           <Project/>
+           <Skills/>
             <Profile/>
-        </div>
+        </>
     );
 }
 

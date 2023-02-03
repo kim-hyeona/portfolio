@@ -16,7 +16,6 @@ function ProjectSilde({ project }) {
         {project.map((item) => <div className={isOpen ? "silde_active" : "silde"}>
         <h5>{item.title}</h5>
             <div onClick={()=>toggleMenu()} className={isOpen ? "sildeBtn_active" : "sildeBtn"}>
-            {item.raedmore}
             </div>
 
             <div className="closeBtn">
@@ -25,7 +24,7 @@ function ProjectSilde({ project }) {
                 <div className={isOpen ? "sildeIn_active" : "sildeIn"}>
                 <div className="btns">
                     <div className="gitBtn"><a href=""></a></div>
-                    <div className="inCloseBtn"></div>
+                    <div onClick={()=>toggleMenu()} className="inCloseBtn"></div>
                 </div>
                     
                 <div className="txtBox">

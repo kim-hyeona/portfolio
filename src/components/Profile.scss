@@ -1,7 +1,6 @@
 
 .profile{
-    width: 100%;
-    height: 100;
+    width: 100%; height: 100vh;
     text-align: center;
     p {
             margin-bottom: 0.781vw;
@@ -24,6 +23,7 @@
     }
     .profile_box1{
         margin-bottom: 2.865vw;
+        font-size: 0.833vw;
        
     }
     .profile_box2{
@@ -34,7 +34,8 @@
         .profile_box2_txtbox{
             text-align: left;
             margin-top: 0.781vw;
-            width: 250px; //vw로 바꾸기
+            width: 13.021vw; //vw로 바꾸기
+            font-size: 0.833vw;
         }
         .profile_box2_imgbox{
             position: relative;

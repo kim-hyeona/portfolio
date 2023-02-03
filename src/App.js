@@ -1,4 +1,4 @@
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Main from "./layout/Main";
 import CantactMe from "./layout/CantactMe"
 import Project from "./components/Project";
@@ -11,13 +11,12 @@ function App() {
   return (
       <>
       <Nav/>
-      {/* <Main/> */}
       <AnimatePresence>
       <Routes>
-        <Route path="/" element={<Main/>}></Route>
-        <Route path="/project" element={<Project/>} />
-        <Route path="/skills" element={<Skills/>} />
-        <Route path="/profile" element={<Profile/>} />
+        <Route path="/" element={<Main />}/>
+        <Route path="project" element={<Project />} />
+        <Route path="skills" element={<Skills />}/>
+        <Route path="profile" element={<Profile />} />
       </Routes>
       </AnimatePresence>
       <CantactMe/>

@@ -63,8 +63,9 @@
                     width: 0%;
                     height: 100%;
                     background-color: #FF800B;
-                    padding: 0.521vw;
+                    padding:10px;
                     transition: 3s;
+                    
                     
                 }
                 .loding{
@@ -74,7 +75,7 @@
                 }
                .run8bit{
                 display: inline-block;
-                width: 35px; height: 35px;
+                width: 1.823vw; height: 1.823vw;
                 background-image: url(../../public/images/run2.png);
                 animation: run 0.2s infinite  ;
                 margin-left: 0%;
