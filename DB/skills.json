@@ -27,9 +27,9 @@
     {
         "id":4,
         "title":"GIT & GITHUB",
-        "class":"figma",
+        "class":"git",
         "contents1":"프로젝트 버전 관리",
-        "contents2":"GITHUB를 이용한 버전 관리와 협업"
+        "contents2":"팀프로젝트 경험 기반으로 GITHUB를 이용한 버전 관리와 협업"
     }
    
 ],
@@ -37,18 +37,16 @@
     "skills2":[
     {
         "id":5,
-        "title":"LODING...",
-        "class":"loding",
-        "class_run":"run8bit",
-        "contents1":"공부중입니다!!"
+        "title":"FIGMA",
+        "class":"figma",
+        "contents1":"프로토타입 제작과 ",
+        "contents2":"와이어프레임 제작과 ui/ux 디자인"
     },
     {
         "id":6,
-        "title":"LODING...",
-        "class":"loding",
-        "class_run":"run8bit",
-        "class_cookie":"cookie8bit",
-        "contents1":"공부중입니다!!"
+        "title":"PHTOSHOP",
+        "class":"phtoshop",
+        "contents1":"간단한 이미지 편집"
     }
     ]
 
