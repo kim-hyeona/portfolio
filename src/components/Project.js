@@ -6,18 +6,16 @@ import ProjectSilde from './ProjectSilde';
 
 
 function Project() {
+    const path = process.env.PUBLIC_URL;
 
     const [project,setproject] = useState([]);
-
     useEffect(() => {
       const getData = async () => {
-      const projectDataList = await axios.get("https://kim-hyeona.github.io/portfolio/DB/ProjectSilde.json");
+      const projectDataList = await axios.get(path + "/DB/ProjectSilde.json");
       setproject(projectDataList.data.project);
       };
       getData();
     }, []);
-
-    const path = process.env.PUBLIC_URL;
  
     const [presentSlide, setpresentSlide] = useState(0);
     const slideRef = useRef(null);

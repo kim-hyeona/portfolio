@@ -8,14 +8,16 @@ import Star from '../layout/Star';
 
 function Skills() {
 
-  
+  // path
+const path = process.env.PUBLIC_URL;
+
 // json
     const [skills,setskills] = useState([]);
     const [skills2,setskills2] = useState([]);
 
     useEffect(() => {
       const getData = async () => {
-      const skillDataList = await axios.get("https://kim-hyeona.github.io/portfolio/DB/skills.json");
+      const skillDataList = await axios.get(path + "/DB/skills.json");
       setskills(skillDataList.data.skills);
       setskills2(skillDataList.data.skills2);
       };
@@ -23,8 +25,6 @@ function Skills() {
     }, []);
 
 
-// path
-const path = process.env.PUBLIC_URL;
 
 // 슬라이드
 const [presentSlide, setpresentSlide] = useState(0);
