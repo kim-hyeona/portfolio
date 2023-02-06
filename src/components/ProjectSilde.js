@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 function ProjectSilde({ project }) {
 
-
     const [isOpen, setMenu] = useState(false);
      
     const toggleMenu = () => {
@@ -35,10 +34,12 @@ function ProjectSilde({ project }) {
                             </div>
                         <h3>{item.title2}</h3>
                         <p>{item.p}</p>
-                            <Link>{item.link}</Link>
+                        <Link to={item.to}>{item.link}</Link>
                         </div>
                 </div>
                 </div>
+
+                
         </div>
         ) }
         

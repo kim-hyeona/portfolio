@@ -10,7 +10,7 @@ function SkillGo(props) {
     console.log(window.scrollY);
     
     if (window.scrollY >= 0) {
-      targetRef.current.style.width = "65%";      
+      targetRef.current.style.width = "40%";      
     }
   };
 
@@ -29,7 +29,7 @@ function SkillGo(props) {
   const handleScrollRun = () => {
     
     if (window.scrollY > 0) {
-      runRef.current.style.marginLeft = "65%";      
+      runRef.current.style.marginLeft = "40%";      
     }
   };
   useEffect(() => {    

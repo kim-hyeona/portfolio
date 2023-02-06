@@ -9,12 +9,13 @@
         background-color: white;
         cursor: pointer;
         width: 2.604vw;
+        top: 30vw;
     }
     button:nth-child(even){
-      top:25vw; right: 10vw;
+        right: 10vw;
     }
     button:nth-child(odd){
-      top:25vw; left: 10vw;
+        left: 10vw;
     }
     h2{
         margin: 5vw 15.625vw;
@@ -24,19 +25,22 @@
     }
     span{
         font-family: 'NeoDunggeunmo';
-        font-size: 1.042vw;
+        font-size: 2.042vw;
+        margin-top: 10px;
+        display: inline-block;
     }
     .skliis_cantainer{
         overflow: hidden;
         width: 72.917vw;
         margin: 5.208vw auto;
+        padding-left: 40px;
     }
     .skills_wrapper{
         display: flex;
-        
             .skills_silde{
+                padding: 25px;
                 display: grid;
-                grid-template-columns: 37vw 37vw;
+                grid-template-columns: 35vw 35vw;
                 grid-template-rows: 18.750vw 18.750vw;
                 justify-content: center;
                 justify-items: center;
@@ -53,8 +57,8 @@
                
                 ul{
                     margin-right: 1.042vw;
-                    width: 26.042vw;
-                    height: 0.521vw;
+                    width: 29.042vw;
+                    height: 0.3vw;
                     background-color: black;
                     overflow: hidden;
                     position: static;
@@ -90,7 +94,7 @@
                 }
                 .cookie8bit{
                 position:absolute;
-                left: 24.479vw;
+                left: 27vw;
                 width: 1.667vw; height: 1.667vw;
              }
         }

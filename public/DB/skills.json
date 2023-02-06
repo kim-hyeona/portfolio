@@ -2,34 +2,38 @@
     "skills":[
         {
         "id":1,
-        "title":"HTML & CSS",
+        "title":"HTML5&CSS3",
         "class":"html",
-        "contents1":"미디어 쿼리를 이용한 반응형 웹 구현",
-        "contents2":"애니메이션과 트랜지션을 이용한 간단한 움직임 구현",
-        "contents3":"웹 접근성을 고려하고 콘텐츠 내용에 적합한 태그를 사용한 마크업 작업",
-        "contents4":"웹 사이트 디자인"
+        "contents1":"- 미디어 쿼리를 이용한 반응형 웹 구현",
+        "contents2":"- 웹 접근성을 고려하고 콘텐츠 내용에 적합한 태그를 사용한 마크업 작업",
+        "contents3":"- 애니메이션과 트랜지션을 이용하여 자바스크립트를 대체 할 수 있는 애니메이션 작업"
     },
     {
         "id":2,
-        "title":"REACT",
+        "title":"REACT ",
         "class":"react",
-        "contents1":"함수 컴포넌트와 HOOK을 이용하여 UI 제작",
-        "contents2":"스크롤/클릭 이벤트와 애니메이션 구현,OPEN API 활용"
+        "contents1":"- 함수 컴포넌트와 HOOK을 이용하여 UI 제작",
+        "contents2":"- 스크롤/클릭 이벤트와 애니메이션 구현,OPEN API 활용",
+        "contents3":"- firebase mogoDB를 이용한 배포경험",
+        "contents4":"- 컴포넌트 라이프 사이클에 대한 이해",
+        "contents5":"- React-Router-Dom을 이용하여 페이지 이동 처리"
     },
     {
         "id":3,
         "title":"JAVASCRIPT",
         "class":"js",
-        "contents1":"다채로운 스크롤 / 클릭 이벤트와 애니메이션 구현",
-        "contents2":"사용자가 이용할 대부분의 기능 구현",
-        "contents3":"OPEN API 사용"
+        "contents1":"- 스크롤 / 클릭 이벤트와 애니메이션 구현",
+        "contents2":"- 통신 Fetch API, Axios 라이브러리",
+        "contents3":"- OPEN API 사용",
+        "contents4":"- 콜백함수, promise, async, await 등을 이용한 비동기적 프로그래밍의 이해",
+        "contents5":"- node js를 비롯해서 웹브라우저같은 자바스크립 런타입의 대한 이해"
     },
     {
         "id":4,
-        "title":"GIT & GITHUB",
-        "class":"figma",
-        "contents1":"프로젝트 버전 관리",
-        "contents2":"GITHUB를 이용한 버전 관리와 협업"
+        "title":"GIT&GITHUB",
+        "class":"git",
+        "contents1":"- 프로젝트 버전 관리",
+        "contents2":"- 팀프로젝트 경험 기반으로 GITHUB를 이용한 버전 관리와 협업"
     }
    
 ],
@@ -37,18 +41,16 @@
     "skills2":[
     {
         "id":5,
-        "title":"LODING...",
-        "class":"loding",
-        "class_run":"run8bit",
-        "contents1":"공부중입니다!!"
+        "title":"FIGMA",
+        "class":"figma",
+        "contents1":"- 프로토타입 제작과 와이어프레임 제작",
+        "contents2":"- 간단한 ui/ux 디자인"
     },
     {
         "id":6,
-        "title":"LODING...",
-        "class":"loding",
-        "class_run":"run8bit",
-        "class_cookie":"cookie8bit",
-        "contents1":"공부중입니다!!"
+        "title":"PHTOSHOP",
+        "class":"phtoshop",
+        "contents1":"- 간단한 이미지 편집"
     }
     ]
 

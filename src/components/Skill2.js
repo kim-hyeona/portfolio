@@ -14,6 +14,9 @@ function Skill2({ skills }) {
                         <li>{item.contents2}</li>
                         <li>{item.contents3}</li>
                         <li>{item.contents4}</li>
+                        <li>{item.contents5}</li>
+                        <li>{item.contents6}</li>
+                        <li>{item.contents7}</li>
                     </ul>
                 </div>
             </div>

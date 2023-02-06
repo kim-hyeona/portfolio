@@ -9,10 +9,20 @@ function Project() {
     const path = process.env.PUBLIC_URL;
 
     const [project,setproject] = useState([]);
+    const [project2,setproject2] = useState([]);
+    const [project3,setproject3] = useState([]);
+    const [project4,setproject4] = useState([]);
+    const [project5,setproject5] = useState([]);
+    const [project6,setproject6] = useState([]);
     useEffect(() => {
       const getData = async () => {
       const projectDataList = await axios.get(path + "/DB/ProjectSilde.json");
       setproject(projectDataList.data.project);
+      setproject2(projectDataList.data.project2);
+      setproject3(projectDataList.data.project3);
+      setproject4(projectDataList.data.project4);
+      setproject5(projectDataList.data.project5);
+      setproject6(projectDataList.data.project6);
       };
       getData();
     }, []);
@@ -54,11 +64,11 @@ function Project() {
             <div  className='project_btn' onClick={prevSlide} ><img src={path+'/images/arrow1-1.png'} alt=">" /></div>
                 <div className='silde_wrapper'  ref={slideRef} >
                     <ProjectSilde project={project}/>
-                    <ProjectSilde project={project}/>
-                    <ProjectSilde project={project}/>
-                    <ProjectSilde project={project}/>
-                    <ProjectSilde project={project}/>
-                    <ProjectSilde project={project}/>
+                    <ProjectSilde project={project2}/>
+                    <ProjectSilde project={project3}/>
+                    <ProjectSilde project={project4}/>
+                    <ProjectSilde project={project5}/>
+                    <ProjectSilde project={project6}/>
                 </div>
         </article>
       </motion.div>
