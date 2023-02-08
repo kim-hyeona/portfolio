@@ -1,5 +1,90 @@
 .portfolio_sub{
+    background:linear-gradient(#069AD6 10%, white 30%, white);
+    overflow: hidden;
     h2{
-        margin-top: 50px;
+        margin-top: 6.250vw;
+    }
+    h3{
+    margin-bottom: 1.5vw;
+    font-size: 1.563vw;
+    font-family: 'NeoDunggeunmo';
+    }
+    .goals{
+        margin: 0 0 1.302vw 5vw;
+        dd{
+            width: 35%;
+            margin-bottom: 0.781vw;
+            padding-bottom: 10px;
+            font-size: 0.938vw;
+        }
+    }
+    article{
+        margin: 0 auto;
+        background-color: white;
+        width: 90%;
+        display: flex;
+        padding: 2.604vw;
+        border: 5px #000 solid;
+        div {
+        
+                dd {
+                    line-height: 1.5;
+                    font-size: 0.833vw;
+                    margin-bottom: 1vw;
+                    strong{
+                        font-size: 1.042vw;
+                    }
+                }
+        
+                dl {
+                    margin-bottom: 3.646vw;
+                }
+        
+                dt {
+                    font-size: 1.31vw;
+                    margin-bottom: 0.562vw;
+                    font-weight: 700;
+                }
+            }
+        div{
+            width: 100%;
+        }
+        .text_box{
+            div{
+                margin-bottom: 100px;
+                P{
+                    margin-bottom: 50px;
+                }
+                dt{
+                    font-size: 1.042vw;
+                }
+            }
+        }
+        .directory{
+            width: 65%;
+            ul{
+                li{
+                    font-size: 1.302vw;
+                    ul{
+                        li{
+                            font-size: 1.042vw;
+                            margin-left: 0.781vw;
+                            ul{
+                                li{
+                                    font-size: 0.938vw;
+                                    margin-left: 1.563vw;
+                                    ul{
+                                        li{
+                                            font-size: 0.833vw;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }   
     }
 }
+

@@ -71,6 +71,8 @@ function Project() {
                     <ProjectSilde project={project6}/>
                 </div>
         </article>
+
+
       </motion.div>
     );
 }

@@ -18,7 +18,9 @@ function App() {
       <AnimatePresence>
       <Routes>
         <Route path="/" element={<Main />}/>
-        <Route path="/project" element={<Project />}/>
+        <Route path="/project" element={<Project />}>
+          
+        </Route>
         <Route path="/skills" element={<Skills />}/>
         <Route path="/profile" element={<Profile />} />
       </Routes>
@@ -27,6 +29,12 @@ function App() {
           <Route path="1" element={<Project1 />}/>
           <Route path="2" element={<Project2 />}/>
           <Route path="3" element={<Project3 />}/> 
+      </Routes>
+       <Routes>
+          <Route path="/project/portfoliosub" element={<PortfolioSub />}/>
+          <Route path="/project/1" element={<Project1 />}/>
+          <Route path="/project/2" element={<Project2 />}/>
+          <Route path="/project/3" element={<Project3 />}/> 
       </Routes>
       </AnimatePresence>
       <CantactMe/>
