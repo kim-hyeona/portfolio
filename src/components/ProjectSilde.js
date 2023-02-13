@@ -26,7 +26,7 @@ function ProjectSilde({ project }) {
 
                 <div className={isOpen ? "sildeIn_active" : "sildeIn"}>
                 <div className="btns">
-                    <div className="gitBtn"><a href=""></a></div>
+                    <div className="gitBtn"><a href={item.git} target="_blank">.</a></div>
                     <div onClick={()=>toggleMenu()} className="inCloseBtn"></div>
                 </div>
                     

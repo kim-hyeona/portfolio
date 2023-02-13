@@ -1,1 +1,13 @@
-// background:linear-gradient(#069AD6 10%, white 30%, white);
+// 
+.porject2{
+    background:linear-gradient(#069AD6 10%, white 30%, white);
+    overflow: hidden;
+    h2{
+        margin-top: 6.250vw;
+    }
+    .project_box{
+        border: 5px solid black;
+        width: 50%;
+        margin: 0 auto;
+    }
+}
