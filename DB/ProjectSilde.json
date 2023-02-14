@@ -18,25 +18,27 @@
             "stack":"Vanilla JS",
             "move":"#JS #JS #JS",
             "title2":"프로젝트 목표",
-            "p":"팀프로젝트를 통해서 팀원들과 소통하고 협업하는 법, git 사용법을 연습하고 쇼핑몰을 구현해나가는 것",
+            "p":"바닐라 자바스크립트로 open api를 이용한 검색기능,이미지 다운로드를 구현한다",
             "link":"바로 보러가기!",
             "to":"1",
-            "img":"/images/project_2.png",
-            "git":"https://github.com/T-F-3/drmodoo"
+            "img":"/images/project_3.png",
+            "git":"https://github.com/kim-hyeona/topster"
             
         }
+        
    ],
+
     "project3":[
         {
             "title":"Vanilla JS",
             "stack":"Vanilla JS",
             "move":"#JS #JS #JS",
             "title2":"프로젝트 목표",
-            "p":"바닐라 자바스크립트로 open api를 이용한 검색기능, 단순한 편집 기능,이미지 다운로드를 구현한다",
+            "p":"팀프로젝트를 통해서 팀원들과 소통하고 협업하는 법, git 사용법을 연습하고 html5 css3 js를 이용하여 쇼핑몰을 퍼블리싱",
             "link":"바로 보러가기!",
             "to":"2",
-            "img":"/images/project_3.png",
-            "git":"https://github.com/kim-hyeona/topster"
+            "img":"/images/project_2.png",
+            "git":"https://github.com/T-F-3/drmodoo"
             
         }
    ],
