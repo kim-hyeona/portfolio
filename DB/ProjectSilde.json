@@ -6,7 +6,7 @@
             "move":"#PORTFOLIO #REACT #PORTFOLIO #REACT",
             "title2":"프로젝트 목표",
             "p":"리액트를 이용해서 포트폴리오를 만들며 리액트를 공부함",
-            "link":"바로 보러가기!",
+            "link":"프로젝트 더 보기",
             "to":"portfoliosub",
             "img":"/images/project_1.png",
             "git":"https://github.com/kim-hyeona/portfolio"
@@ -19,7 +19,7 @@
             "move":"#JS #JS #JS",
             "title2":"프로젝트 목표",
             "p":"바닐라 자바스크립트로 open api를 이용한 검색기능,이미지 다운로드를 구현한다",
-            "link":"바로 보러가기!",
+            "link":"프로젝트 더 보기",
             "to":"1",
             "img":"/images/project_3.png",
             "git":"https://github.com/kim-hyeona/topster"
@@ -35,7 +35,7 @@
             "move":"#JS #JS #JS",
             "title2":"프로젝트 목표",
             "p":"팀프로젝트를 통해서 팀원들과 소통하고 협업하는 법, git 사용법을 연습하고 html5 css3 js를 이용하여 쇼핑몰을 퍼블리싱",
-            "link":"바로 보러가기!",
+            "link":"프로젝트 더 보기",
             "to":"2",
             "img":"/images/project_2.png",
             "git":"https://github.com/T-F-3/drmodoo"
@@ -44,38 +44,40 @@
    ],
     "project4":[
         {
-            "title":"title",
+            "title":"REACT",
             "stack":"REACT",
             "move":"#REACT #REACT #REACT",
             "title2":"프로젝트 목표",
-            "p":"리액트를 이용하여 사용자가 어떤 디바이스를 사용하던 편하게 이용 할 수 있는 사이트를 구축하고 공부하기",
-            "link":"바로 보러가기!",
+            "p":"json을 랜덤으로 출력하는 클릭이벤트를 만들고 kakao api를 이용해 카톡으로 공유하기를 구현합니다 ",
+            "link":"프로젝트 더 보기",
             "to":"3",
-            "git":""
+            "img":"/images/project_4.png",
+            "git":"https://github.com/kim-hyeona/Eating-out-on-a-diet"
             
         }
    ],
     "project5":[
         {
-            "title":"title",
+            "title":"REACT",
             "stack":"REACT",
             "move":"#REACT #REACT #REACT",
             "title2":"프로젝트 목표",
-            "p":"리액트를 이용하여 사용자가 어떤 디바이스를 사용하던 편하게 이용 할 수 있는 사이트를 구축하고 공부하기",
-            "link":"바로 보러가기!",
+            "p":"HTML5 CSS3 JSX를 사용하여 미광디자인 웹페이지를 퍼블리싱합니다",
+            "link":"프로젝트 더 보기",
             "to":"4",
-            "git":""
+            "img":"/images/project_5.png",
+            "git":"https://github.com/kim-hyeona/reactWeb"
         }
    ],
       "project6":[
         {
-            "title":"title",
-            "stack":"REACT",
-            "move":"#REACT #REACT #REACT",
-            "title2":"프로젝트 목표",
-            "p":"리액트를 이용하여 사용자가 어떤 디바이스를 사용하던 편하게 이용 할 수 있는 사이트를 구축하고 공부하기",
-            "link":"바로 보러가기!",
-            "to":"5",
+            "title":"두피 자가진단 준비중...",
+            "stack":"곧 만들어 오겠습니다~",
+            "move":"#준비중 #준비중 #준비중",
+            "title2":"",
+            "p":"",
+            "link":"",
+            "to":"",
             "git":""
         }
    ]
